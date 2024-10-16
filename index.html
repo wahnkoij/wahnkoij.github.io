@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap">
+    <title>cv</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Софья Соловарова</h1>
+            <img src="assets/profile.jpg" alt="Софья Соловарова" class="profile-pic">
+            <h2>Python-разработчик</h2>
+            <nav>
+                <ul>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#experience">Опыт работы</a></li>
+                    <li><a href="#education">Образование</a></li>
+                    <li><a href="#courses">Курсы</a></li>
+                    <li><a href="#languages">Языки</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>Обо мне</h2>
+            <p>Меня зовут Софья, и я начинающий Python-разработчик с опытом работы над веб-приложениями. В настоящее время обучаюсь в НИУ ВШЭ СПб на факультете прикладной математики и информатики. Мой интерес к программированию начался с разработки небольших проектов, и теперь я стремлюсь развивать свои навыки и работать над более сложными задачами.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Навыки</h2>
+            <div class="skill-set">
+                <div class="skill">Python</div>
+                <div class="skill">Django</div>
+                <div class="skill">Django Rest Framework</div>
+                <div class="skill">PostgreSQL</div>
+                <div class="skill">SQL</div>
+                <div class="skill">HTML</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Git</div>
+                <div class="skill">Docker</div>
+                <div class="skill">Nginx</div>
+                <div class="skill">Основы тестирования</div>
+                <div class="skill">C++</div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Опыт работы</h2>
+            <div class="job">
+                <h3>Junior Python Developer</h3>
+                <p><strong>INNODOM</strong> (2023 - 2024)</p>
+                <ul>
+                    <li>Создала веб-приложение с использованием фреймворка Django, позволяющее авторизованным пользователям делиться фотографиями и добавлять к ним описание.</li>
+                    <li>Работала с Nginx и Docker для обеспечения надежности и удобства развертывания приложения.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Образование</h2>
+            <div class="education">
+                <h3>Среднее</h3>
+                <p>(2013 - 2024)</p>
+                <h3>Высшее</h3>
+                <p>(2024 - 2028)</p>
+                <p><strong>НИУ ВШЭ СПБ</strong></p>
+            </div>
+        </section>
+
+        <section id="courses">
+            <h2>Дополнительные курсы</h2>
+            <ul>
+                <li>Python Basic</li>
+                <li>Основы разработки игр на C++</li>
+            </ul>
+        </section>
+
+        <section id="languages">
+            <h2>Языки</h2>
+            <div class="language">
+                <span>Русский</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 100%"></div>
+                </div>
+            </div>
+            <div class="language">
+                <span>Английский</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="language">
+                <span>Китайский</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%"></div>
+                </div>
+            </div>
+            <div class="language">
+                <span>Польский</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Способы связи</h2>
+            <p>Телефон: <a href="tel:+79697975223">+7 969 797 52 23</a></p>
+            <p>Email: <a href="mailto:sonneij@yandex.ru">sonneij@yandex.ru</a></p>
+            <p>GitHub: <a href="https://github.com/wahnkoij" target="_blank">@wahnkoij</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/wahnkoij" target="_blank">@wahnkoij</a></p>
+            <p>Telegram: <a href="http://t.me/wahnkoij" target="_blank">@wahnkoij</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024. Все права защищены.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script>
+        // Плавная прокрутка при клике на ссылки навигации
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
